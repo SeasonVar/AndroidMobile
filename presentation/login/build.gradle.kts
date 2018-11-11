@@ -11,6 +11,7 @@ android {
 }
 
 dependencies {
+    implementation(project(":domain"))
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion")
-    implementation("com.android.support:appcompat-v7:28.0.0")
+    implementation("com.android.support:support-fragment:28.0.0")
 }
