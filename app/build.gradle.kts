@@ -12,7 +12,7 @@ android {
 
     defaultConfig {
 
-        applicationId = "season.var"
+        applicationId = "seasonvar.android.mobile"
         versionName = "1.0"
         versionCode = 1
 
@@ -31,8 +31,5 @@ android {
 }
 
 dependencies {
-
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion")
-    implementation("com.android.support:appcompat-v7:28.0.0")
-
+    implementation(project(":presentation:login"))
 }
