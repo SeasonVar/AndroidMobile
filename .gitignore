@@ -4,6 +4,8 @@
 /local.properties
 
 # JetBrains IDE
-*.iml
 /.idea/
+/*.ipr
+/*.iws
+*.iml
 
