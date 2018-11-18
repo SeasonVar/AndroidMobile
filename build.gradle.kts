@@ -1,15 +1,13 @@
 buildscript {
 
-    val kotlinVersion by extra { "1.3.0" }
-
     repositories {
         google()
         jcenter()
     }
 
     dependencies {
-        classpath("com.android.tools.build:gradle:3.3.0-beta04")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
+        classpath("com.android.tools.build:gradle:${Versions.androidGradlePlugin}")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}")
     }
 
 }

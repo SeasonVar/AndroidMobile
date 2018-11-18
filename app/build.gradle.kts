@@ -5,11 +5,9 @@ plugins {
     id("kotlin-android-extensions")
 }
 
-val kotlinVersion: String by rootProject.extra
-
 android {
 
-    compileSdkVersion(28)
+    compileSdkVersion(Versions.compileSdkVersion)
 
     defaultConfig {
 
@@ -17,8 +15,8 @@ android {
         versionName = "1.0"
         versionCode = 1
 
-        minSdkVersion(21)
-        targetSdkVersion(28)
+        minSdkVersion(Versions.minSdkVersion)
+        targetSdkVersion(Versions.targetSdkVersion)
 
     }
 
@@ -39,11 +37,11 @@ dependencies {
 
     implementation(project(":presentation:login"))
 
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion")
+    implementation(Libs.kotlinStdLib)
 
-    implementation("com.android.support:appcompat-v7:28.0.0")
-    implementation("com.android.support:support-fragment:28.0.0")
+    implementation(Libs.AndroidSupport.appCompatV7)
+    implementation(Libs.AndroidSupport.fragment)
 
-    implementation("android.arch.navigation:navigation-fragment:1.0.0-alpha07")
+    implementation(Libs.AndroidArch.navigation)
 
 }
