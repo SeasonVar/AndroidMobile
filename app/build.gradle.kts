@@ -35,9 +35,13 @@ android {
 
 dependencies {
 
+    implementation(project(":domain"))
     implementation(project(":presentation:login"))
 
     implementation(Libs.kotlinStdLib)
+
+    kapt(Libs.daggerCompiler)
+    kapt("com.google.dagger:dagger-android-processor:2.19")
 
     implementation(Libs.AndroidSupport.appCompatV7)
     implementation(Libs.AndroidSupport.fragment)

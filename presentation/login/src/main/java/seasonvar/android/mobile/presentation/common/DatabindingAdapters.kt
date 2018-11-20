@@ -1,4 +1,4 @@
-package seasonvar.android.mobile.presentation.login.databinding
+package seasonvar.android.mobile.presentation.common
 
 import android.databinding.BindingAdapter
 import android.view.View
