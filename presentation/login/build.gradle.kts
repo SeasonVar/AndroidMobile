@@ -22,7 +22,8 @@ android {
 
 dependencies {
 
-    implementation(project(":domain"))
+    api(project(":domain"))
+    api(project(":presentation:common"))
 
     implementation(Libs.kotlinStdLib)
 
