@@ -1,2 +1,6 @@
 language: android
 
+android:
+  licenses:
+  - android-sdk-license-.+
+
