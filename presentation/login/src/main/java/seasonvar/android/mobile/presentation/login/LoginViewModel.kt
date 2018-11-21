@@ -15,8 +15,8 @@ class LoginViewModel @Inject constructor(
     private val router: LoginRouter
 ) : ViewModel() {
 
-    val login = ObservableField<String>()
-    val password = ObservableField<String>()
+    val login = ObservableField<String>("")
+    val password = ObservableField<String>("")
     val isProgress = ObservableBoolean()
 
     private val disposables = CompositeDisposable()
