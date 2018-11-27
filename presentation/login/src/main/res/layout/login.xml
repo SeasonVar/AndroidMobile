@@ -24,26 +24,33 @@
             app:visibleOrInvisibleIf="@{ !model.isProgress }">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="16dp">
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@={ model.login }"/>
+                    android:text="@={ model.login }" />
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@={ model.password }"/>
+                    android:text="@={ model.password }" />
 
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:onClick="@{ () -> handler.onLoginButtonClick() }"
                     android:text="@string/login" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{ model.error }"
+                    app:visibleOrInvisibleIf="@{ model.error > 0 }" />
 
             </LinearLayout>
 

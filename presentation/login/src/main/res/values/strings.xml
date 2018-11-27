@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <string name="empty" translatable="false" />
+
     <string name="login">Login</string>
+
+    <string name="wrong_login_or_password">Неверный логин или пароль</string>
+    <string name="cant_authorize">Не удалось авторизоваться</string>
+
 </resources>
