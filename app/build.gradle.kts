@@ -31,17 +31,22 @@ android {
         isEnabled = true
     }
 
+    packagingOptions {
+        exclude("META-INF/*.kotlin_module")
+    }
+
 }
 
 dependencies {
 
     implementation(project(":domain"))
     implementation(project(":presentation:login"))
+    implementation(project(":data:server"))
 
     implementation(Libs.kotlinStdLib)
 
     kapt(Libs.daggerCompiler)
-    kapt("com.google.dagger:dagger-android-processor:2.19")
+    kapt(Libs.daggerAndroidProcessor)
 
     implementation(Libs.AndroidSupport.appCompatV7)
     implementation(Libs.AndroidSupport.fragment)
