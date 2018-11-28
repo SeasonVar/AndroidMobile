@@ -4,7 +4,7 @@ object Versions {
     const val targetSdkVersion = 28
     const val compileSdkVersion = 28
 
-    const val kotlin = "1.3.0"
+    const val kotlin = "1.3.10"
 
     const val androidSupport = "28.0.0"
     const val androidArchLifecycle = "1.1.1"
